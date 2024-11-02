@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spot Events</title>
+  <style>
+    /* General Reset and Background */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background-color: #111010; /* Light gray background */
+      color: #000; /* Black text */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    /* Header Styles */
+    .header {
+      text-align: center;
+      color: #FFD700; /* Gold color */
+      font-size: 3em;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    /* Card Container */
+    .card-container {
+      width: 90%;
+      max-width: 800px;
+      background-color: #f2f2f2; /* Light gray for card */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    /* Event Description */
+    .event-description {
+      font-size: 1.2em;
+      color: #000; /* Black text */
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    /* Button Styles */
+    .button-container a {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 1em;
+      color: #fff;
+      background-color: #FFD700; /* Gold button */
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .button-container a:hover {
+      background-color: #b8860b; /* Darker shade of gold on hover */
+    }
+
+    /* Reveal Message Styles */
+    .reveal-message {
+      font-size: 1.4em;
+      color: #000; /* Black text */
+      font-weight: bold;
+      opacity: 0;
+      transform: scale(0.8);
+      animation: revealAnimation 2s ease-in-out forwards;
+      animation-delay: 0.5s;
+      margin-top: 20px;
+    }
+
+    /* Animation for Reveal Message */
+    @keyframes revealAnimation {
+      0% {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <div class="header">Spot Events</div>
+
+  <!-- Event Details Section -->
+  <div class="card-container">
+    <p class="event-description">
+      Quick Challenges, Instant Wins—Test Your Skills on the Spot! Spot Events bring exciting, on-the-go challenges that give you the thrill of immediate feedback and recognition. Are you ready to prove your skills in the moment?
+    </p>
+    <div class="button-container">
+      <a href="spoteventdetails.html">Know More</a>
+    </div>
+
+    <!-- Reveal Message Section -->
+    <div class="reveal-message">Details Revealed on the Event Day!</div>
+  </div>
+</body>
+</html>
